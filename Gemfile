@@ -1,4 +1,6 @@
 source "https://rubygems.org"
+# gem for ruby on rails linters
+gem 'rubocop', '>= 1.0', '< 2.0'
 
 ruby "3.0.2"
 
