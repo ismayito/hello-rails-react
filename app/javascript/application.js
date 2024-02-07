@@ -6,7 +6,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Greetings from "./Component/Greetings";
-import ConnectedGreeting from "./Component/Greetings";
 import store from "./Redux/store";
 
 function App() {

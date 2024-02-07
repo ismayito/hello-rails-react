@@ -1,7 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit";
-import thunk from "redux-thunk";
-import messageReducer from "./messageReducer";
+import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import greetingsSlice from "./greetingsSlice";
 
-const Store = configureStore({ reducer: messageReducer });
+const rootReducer = combineReducers({ greetings: greetingsSlice });
+const store = configureStore({ reducer: rootReducer });
 
-export default Store;
+export default store;

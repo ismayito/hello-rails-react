@@ -1,25 +1,16 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchMessage } from "../Redux/action";
+import { fetchGreeting } from "../Redux/greetingsSlice";
 
-const GreetingsComponent = () => {
+const Greeting = () => {
   const dispatch = useDispatch();
-  const randomMessage = useSelector((state) => state.randomMessage);
-  console.log(randomMessage);
+  const greeting = useSelector((state) => state.greetings.greeting);
 
   useEffect(() => {
-    // Dispatch the fetchMessage action when the component mounts
-    dispatch(fetchMessage());
+    dispatch(fetchGreeting());
   }, [dispatch]);
 
-  console.log(randomMessage);
-
-  return (
-    <div>
-      <h2>Random Message:</h2>
-      <p>{randomMessage}</p>
-    </div>
-  );
+  return <h2>{greeting}</h2>;
 };
 
-export default GreetingsComponent;
+export default Greeting;
