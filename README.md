@@ -22,7 +22,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Rails-budget-app] <a name="about-project"></a>
+# 📖 [Hello-react-app] <a name="about-project"></a>
 
 **[Rails-budget-app]** is an app that helps you create transactions of different categories.
 
