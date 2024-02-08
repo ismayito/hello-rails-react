@@ -18,7 +18,7 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
-    sourceMapFilename: "[file].map",
+    sourceMapFilename: "[name].map",
     chunkFormat: "module",
     path: path.resolve(__dirname, "app/assets/builds"),
   },
